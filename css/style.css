@@ -1,1 +1,68 @@
 @charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    background-color: grey;
+    overflow:hidden;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active{
+    background-color: #746c74;
+    color: white;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.header h1{
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: 8px; 
+    width: 40%;
+    margin-left: 30%;
+}   
+
+/* Layout einfuegen */
+.projectCard {
+    padding: 0 16px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}

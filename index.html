@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="utf-8"/>
+  <head>
+    <meta charset="utf-8" />
     <title>Portfolio Website V1</title>
-    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <section>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Filler</li>
-                <li>Filler2</li>
-            </ul>
-        </nav>
-    </section>
+    <div class="navbar" id="myTopNavbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="header">
+      <h1>Julian Mierisch</h1>
+      <p>My website is lit af.</p>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="projectCard">
+          <h2>Project 1</h2>
+          <p class="title">Lorem ipsum dollor</p>
+          <p>Some text</p>
+          <p>ajdawd</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="projectCard">
+          <h2>Project 2</h2>
+          <p class="title">Lorem ipsum dollor</p>
+          <p>Some text</p>
+          <p>ajdawd</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <div class="projectCard">
+          <h2>Project 3</h2>
+          <p class="title">Lorem ipsum dollor</p>
+          <p>Some text</p>
+          <p>ajdawd</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
   </body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopNavbar");
+      if (x.className == "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </html>
